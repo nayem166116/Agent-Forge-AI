@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Agent Forge AI — AI-Powered Analytics Platform</title>
+<meta name="description" content="Agent Forge AI turns raw event streams into real-time anomaly detection, forecasting, and automated reporting for modern data teams." />
+<meta name="color-scheme" content="dark" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23191919'/%3E%3Cpath d='M7 17L12 7L17 17' stroke='%235E9FE8' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<canvas id="aiCanvas" class="ai-bg" aria-hidden="true"></canvas>
+
+<header class="nav" id="siteNav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo.png" alt="Agent Forge AI logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <span class="logo-mark" style="display:none;"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L12 7L17 17" stroke="#191919" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      Agent Forge AI
+    </a>
+    <nav class="links">
+      <a href="index.html" class="current">Home</a>
+      <a href="features.html">Features</a>
+      <a href="demo.html">Live Demo</a>
+      <a href="customers.html">Customers</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="login.html" class="nav-signin">Sign in</a>
+      <a href="signup.html" class="btn btn-primary btn-sm"><span class="btn-label">Book a Demo</span><span class="spinner"></span></a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+      <span class="hero-ring r1"></span>
+      <span class="hero-ring r2"></span>
+      <span class="hero-ring r3"></span>
+    <div class="wrap">
+      <span class="hero-eyebrow">Backed by data-infra investors</span>
+      <div class="tag-row"><span class="tag-chip">AI Infrastructure</span><span class="tag-chip">Data Analytics</span><span class="tag-chip">Enterprise SaaS</span></div>
+      <h1 class="kinetic-block">
+        <span class="k-line k-xl">Data that</span>
+        <span class="k-line k-xl k-accent">thinks ahead</span>
+      </h1>
+      <p class="sub">Agent Forge AI watches every event in your pipeline, flags anomalies before they cost you, and forecasts what happens next — without a single dashboard you have to babysit.</p>
+      <div class="hero-actions">
+        <a href="demo.html" class="btn btn-accent"><span class="btn-label">Try the live demo</span><span class="spinner"></span></a>
+        <a href="features.html" class="btn btn-outline"><span class="btn-label">See how it works</span></a>
+      </div>
+      <div class="hero-note">No credit card required · 14-day full-access trial</div>
+
+      <div class="hero-mock" id="heroMock">
+        <div class="hero-mock-bar"><span></span><span></span><span></span></div>
+        <div class="hero-mock-body">
+          <div class="mock-chart">
+            <div class="mock-chart-head">
+              <div class="mock-chart-title">Event throughput — live</div>
+              <span class="live-dot"><span class="live-dot-core"></span>Live</span>
+            </div>
+            <div class="mock-bars">
+              <i style="height:38%"></i><i style="height:52%"></i><i style="height:44%"></i><i style="height:61%"></i>
+              <i style="height:70%"></i><i style="height:58%"></i><i style="height:66%"></i><i style="height:80%"></i>
+              <i style="height:72%"></i><i style="height:90%"></i><i style="height:84%"></i><i style="height:95%"></i>
+              <svg class="mock-line" viewBox="0 0 320 90" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="lineFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#5E9FE8" stop-opacity="0.38"/>
+                    <stop offset="100%" stop-color="#5E9FE8" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0,58 L27,50 L53,56 L80,38 L107,26 L133,40 L160,30 L187,14 L213,27 L240,8 L267,17 L293,4 L320,10 L320,90 L0,90 Z" fill="url(#lineFill)"/>
+                <path d="M0,58 L27,50 L53,56 L80,38 L107,26 L133,40 L160,30 L187,14 L213,27 L240,8 L267,17 L293,4 L320,10" fill="none" stroke="#5E9FE8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="320" cy="10" r="4.5" fill="#0A0A0B" stroke="#5E9FE8" stroke-width="2.5"/>
+              </svg>
+            </div>
+            <div class="mock-chart-foot"><span>00:00</span><span>06:00</span><span>12:00</span><span>18:00</span><span>Now</span></div>
+          </div>
+          <div class="mock-kpis">
+            <div class="mock-kpi"><div class="k-label">Data Sources Connected</div><div class="k-value">24</div><div class="k-delta">+3 this week</div></div>
+            <div class="mock-kpi"><div class="k-label">Avg. Query Latency</div><div class="k-value">142ms</div><div class="k-delta">−12ms vs last week</div></div>
+            <div class="mock-kpi"><div class="k-label">Anomalies Flagged</div><div class="k-value">18</div><div class="k-delta">This week</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust">
+    <div class="wrap">
+      <div class="trust-label">Built for data teams that need answers fast</div>
+      <div class="trust-track-wrap">
+        <div class="trust-track">
+          <span>Finlytics</span><span>Northbeam</span><span>Orbital Data</span><span>Kestrel Labs</span>
+          <span>Meridian Analytics</span><span>Pathwise</span><span>Cascadia Systems</span><span>Verity Cloud</span>
+          <span>Finlytics</span><span>Northbeam</span><span>Orbital Data</span><span>Kestrel Labs</span>
+          <span>Meridian Analytics</span><span>Pathwise</span><span>Cascadia Systems</span><span>Verity Cloud</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-signals">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-eyebrow">Why teams trust us</div>
+        <h2>Built for teams who can't afford to guess</h2>
+        <p>Every workspace ships with the security, compliance, and guarantees enterprise data teams require before they'll rely on a new tool.</p>
+      </div>
+      <div class="trust-grid reveal-stagger">
+        <div class="trust-card">
+          <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>SOC 2 Type II certified</h3>
+          <p>Independently audited controls for security, availability, and confidentiality, renewed annually.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg></div>
+          <h3>GDPR &amp; CCPA compliant</h3>
+          <p>Signed data processing agreements, regional hosting options, and full data export/delete on request.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+          <h3>99.9% uptime SLA</h3>
+          <p>Financially backed uptime commitment with a public, real-time status page for every workspace.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12a9 9 0 0115-6.7M21 12a9 9 0 01-15 6.7"/><path d="M17 3v5h-5M7 21v-5h5"/></svg></div>
+          <h3>14-day money-back guarantee</h3>
+          <p>Not seeing value in two weeks? Get a full refund, no questions asked, no retention calls.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-eyebrow">Why teams switch</div>
+        <h2>One pipeline, from raw events to explained anomalies</h2>
+        <p>Agent Forge AI replaces three disconnected tools — ingestion, monitoring, and reporting — with a single AI-native layer that explains itself in plain language.</p>
+      </div>
+      <div class="features-grid reveal-stagger">
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
+          <h3>Real-time anomaly detection</h3>
+          <p>Statistical + ML models flag deviations within seconds, with confidence scores instead of blind thresholds.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg></div>
+          <h3>Predictive forecasting</h3>
+          <p>Rolling forecasts on every core metric, retrained nightly against your live pipeline.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg></div>
+          <h3>Automated reporting</h3>
+          <p>Digest reports land in Slack or email on your schedule, written in plain language.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:36px;"><a href="features.html" class="btn btn-outline">View all features</a></div>
+
+      <div class="product-tour">
+        <div class="section-head reveal">
+          <div class="section-eyebrow">See it in action</div>
+          <h2>A live look at Agent Forge AI on a real pipeline</h2>
+          <p>Sample views of the actual product surfaces — anomaly alerts, forecasts, and reports — running against a live data stream.</p>
+        </div>
+        <div class="tour-grid reveal-stagger">
+          <div class="tour-card">
+            <div class="tour-card-head"><span>Anomaly detection</span><span class="live-dot"><span class="live-dot-core"></span>Live</span></div>
+            <div class="tour-card-body">
+              <div class="tour-alert">Anomaly flagged</div>
+              <div class="tour-anomaly">
+                <i style="height:40%"></i><i style="height:55%"></i><i style="height:48%"></i><i style="height:62%"></i>
+                <i class="spike" style="height:95%"></i>
+                <i style="height:50%"></i><i style="height:58%"></i><i style="height:44%"></i><i style="height:60%"></i>
+              </div>
+            </div>
+          </div>
+          <div class="tour-card">
+            <div class="tour-card-head"><span>Predictive forecasting</span><span style="color:var(--accent);font-size:12px;font-weight:700;">Sample view</span></div>
+            <div class="tour-card-body">
+              <div class="tour-forecast">
+                <svg viewBox="0 0 260 150" preserveAspectRatio="none">
+                  <path d="M0,120 L30,108 L60,112 L90,90 L120,70 L150,80 L180,52 L210,60 L240,30" fill="none" stroke="var(--border-soft)" stroke-width="2" stroke-dasharray="4 4"/>
+                  <path class="tour-forecast-line" d="M0,120 L30,108 L60,112 L90,90 L120,70 L150,80 L180,52 L210,60 L240,30" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="240" cy="30" r="4.5" fill="var(--canvas)" stroke="var(--accent)" stroke-width="2.5"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="tour-card">
+            <div class="tour-card-head"><span>Automated reporting</span><span style="color:var(--green);font-size:12px;font-weight:700;">Sent to Slack</span></div>
+            <div class="tour-card-body">
+              <div class="tour-report">
+                <div class="tour-report-row"><span class="tour-report-dot"></span>Ingestion lag normal across 12 sources</div>
+                <div class="tour-report-row"><span class="tour-report-dot"></span>Checkout latency stable, p95 142ms</div>
+                <div class="tour-report-row"><span class="tour-report-dot" style="background:var(--orange);"></span>Schema drift detected on events.orders</div>
+                <div class="tour-report-row"><span class="tour-report-dot"></span>Weekly forecast trending stable</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement">
+    <div class="wrap">
+      <div class="section-eyebrow reveal" style="justify-content:center;display:flex;">Why it matters</div>
+      <h2 class="kinetic-block reveal">
+        <span class="k-line k-xl">Pipelines <span class="k-accent">are not</span> static</span>
+      </h2>
+      <p class="statement-sub reveal">Just as your data shifts hour to hour, Agent Forge AI relearns your baseline continuously — so what counts as "normal" is never a guess frozen in time.</p>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="wrap">
+      <div class="stat-giant-grid reveal-stagger" id="statsGrid">
+        <div class="stat-giant"><div class="sg-value" data-target="0.8" data-decimals="1" data-suffix="s">0.0s</div><div class="sg-label">Query response time</div></div>
+        <div class="stat-giant-divider"></div>
+        <div class="stat-giant"><div class="sg-value" data-target="100" data-suffix="%">0%</div><div class="sg-label">Plain-language alerts</div></div>
+        <div class="stat-giant-divider"></div>
+        <div class="stat-giant"><div class="sg-value" data-target="142" data-suffix="ms">0ms</div><div class="sg-label">Avg. Query Latency</div></div>
+        <div class="stat-giant-divider"></div>
+        <div class="stat-giant"><div class="sg-value" data-target="99.9" data-decimals="1" data-suffix="%">0.0%</div><div class="sg-label">Platform uptime</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-eyebrow">Customer stories</div>
+        <h2>Data teams run calmer with Agent Forge AI</h2>
+      </div>
+      <div class="testi-wrap reveal" id="testiWrap">
+        <div class="testi-slide active">
+          <p>"We cut our incident response time from 40 minutes to under 6. Agent Forge AI found a schema drift issue our own alerts missed entirely."</p>
+          <div class="testi-person"><img src="assets/images/customers/rachel-simmons.jpg" alt="Rachel Simmons" class="testi-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" /><div class="testi-avatar" style="display:none;">RS</div><div style="text-align:left"><div class="testi-name">Rachel Simmons</div><div class="testi-role">Head of Data, Finlytics</div></div></div>
+        </div>
+        <div class="testi-slide">
+          <p>"The forecasting model retrains itself nightly against our real pipeline. It's the first analytics tool our engineers actually trust."</p>
+          <div class="testi-person"><img src="assets/images/customers/jonathan-keller.jpg" alt="Jonathan Keller" class="testi-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" /><div class="testi-avatar" style="display:none;">JK</div><div style="text-align:left"><div class="testi-name">Jonathan Keller</div><div class="testi-role">VP Engineering, Northbeam</div></div></div>
+        </div>
+        <div class="testi-slide">
+          <p>"We replaced three internal dashboards with one Agent Forge AI workspace. Onboarding a new analyst now takes a day, not a month."</p>
+          <div class="testi-person"><img src="assets/images/customers/amanda-torres.jpg" alt="Amanda Torres" class="testi-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" /><div class="testi-avatar" style="display:none;">AT</div><div style="text-align:left"><div class="testi-name">Amanda Torres</div><div class="testi-role">Director of Analytics, Orbital Data</div></div></div>
+        </div>
+      </div>
+      <div class="testi-dots" id="testiDots">
+        <button class="active" data-i="0" aria-label="Testimonial 1"></button>
+        <button data-i="1" aria-label="Testimonial 2"></button>
+        <button data-i="2" aria-label="Testimonial 3"></button>
+      </div>
+      <div style="text-align:center;margin-top:36px;"><a href="customers.html" class="btn btn-outline">Read customer stories</a></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-band reveal" style="padding:64px 40px;">
+        <h2>Ready to see your data differently?</h2>
+        <p>Start a 14-day trial on your own pipeline — no credit card, cancel anytime.</p>
+        <div class="hero-actions">
+          <a href="signup.html" class="btn btn-accent"><span class="btn-label">Start free trial</span></a>
+          <a href="pricing.html" class="btn btn-outline"><span class="btn-label">View pricing</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Agent Forge AI logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" /><span class="logo-mark" style="display:none;"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L12 7L17 17" stroke="#191919" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Agent Forge AI</a>
+        <p style="color:var(--ink-soft);font-size:13.5px;max-width:300px;margin-top:14px;">1000 Brickell Avenue, Suite 480<br/>Miami, FL 33131</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Product</h4><a href="features.html">Features</a><a href="demo.html">Live Demo</a><a href="pricing.html">Pricing</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="customers.html">Customers</a><a href="blog.html">Blog</a></div>
+        <div class="footer-col"><h4>Account</h4><a href="login.html">Sign in</a><a href="signup.html">Sign up</a><a href="support.html">Support</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year">2026</span> CODEGPT LLC</span>
+      <div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="cookies.html">Cookie Policy</a></div>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner">
+  <p>We use cookies to improve your experience and analyze traffic. See our <a href="cookies.html" style="color:var(--accent);">Cookie Policy</a> for details.</p>
+  <div class="cookie-actions">
+    <button class="reject" id="cookieReject">Reject</button>
+    <button class="accept" id="cookieAccept">Accept</button>
+  </div>
+</div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

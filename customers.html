@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Customers — Agent Forge AI</title>
+<meta name="color-scheme" content="dark" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23191919'/%3E%3Cpath d='M7 17L12 7L17 17' stroke='%235E9FE8' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<canvas id="aiCanvas" class="ai-bg" aria-hidden="true"></canvas>
+<header class="nav" id="siteNav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Agent Forge AI logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" /><span class="logo-mark" style="display:none;"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L12 7L17 17" stroke="#191919" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Agent Forge AI</a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="demo.html">Live Demo</a>
+      <a href="customers.html" class="current">Customers</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="login.html" class="nav-signin">Sign in</a>
+      <a href="signup.html" class="btn btn-primary"><span class="btn-label">Book a Demo</span><span class="spinner"></span></a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</header>
+
+<main>
+  <div class="page-header">
+      <span class="hero-ring r1"></span>
+      <span class="hero-ring r2"></span>
+      <span class="hero-ring r3"></span>
+    <div class="wrap">
+      <span class="hero-eyebrow">Customers</span>
+      <h1 class="kinetic-block">
+      <span class="k-line k-xl">Data teams run</span>
+      <span class="k-line k-xl k-accent">calmer with us</span>
+      </h1>
+      <p>Growing data teams use Agent Forge AI to catch anomalies earlier and explain them faster.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="case-grid reveal-stagger">
+        <div class="case-card"><div class="case-metric">85% faster</div><h3>Finlytics</h3><p>Incident response time dropped from 40 minutes to under 6 after switching to Agent Forge AI's explained alerts.</p></div>
+        <div class="case-card"><div class="case-metric">3 tools → 1</div><h3>Orbital Data</h3><p>Replaced three internal dashboards with a single Agent Forge AI workspace, cutting analyst onboarding to a single day.</p></div>
+        <div class="case-card"><div class="case-metric">99.9% trust</div><h3>Northbeam</h3><p>Nightly self-retraining forecasts became the first analytics numbers their engineering team fully trusted.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--surface);border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-eyebrow">In their words</div>
+        <h2>What customers say</h2>
+      </div>
+      <div class="testi-wrap reveal" id="testiWrap">
+        <div class="testi-slide active">
+          <p>"We cut our incident response time from 40 minutes to under 6. Agent Forge AI found a schema drift issue our own alerts missed entirely."</p>
+          <div class="testi-person"><img src="assets/images/customers/rachel-simmons.jpg" alt="Rachel Simmons" class="testi-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" /><div class="testi-avatar" style="display:none;">RS</div><div style="text-align:left"><div class="testi-name">Rachel Simmons</div><div class="testi-role">Head of Data, Finlytics</div></div></div>
+        </div>
+        <div class="testi-slide">
+          <p>"The forecasting model retrains itself nightly against our real pipeline. It's the first analytics tool our engineers actually trust."</p>
+          <div class="testi-person"><img src="assets/images/customers/jonathan-keller.jpg" alt="Jonathan Keller" class="testi-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" /><div class="testi-avatar" style="display:none;">JK</div><div style="text-align:left"><div class="testi-name">Jonathan Keller</div><div class="testi-role">VP Engineering, Northbeam</div></div></div>
+        </div>
+        <div class="testi-slide">
+          <p>"We replaced three internal dashboards with one Agent Forge AI workspace. Onboarding a new analyst now takes a day, not a month."</p>
+          <div class="testi-person"><img src="assets/images/customers/amanda-torres.jpg" alt="Amanda Torres" class="testi-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" /><div class="testi-avatar" style="display:none;">AT</div><div style="text-align:left"><div class="testi-name">Amanda Torres</div><div class="testi-role">Director of Analytics, Orbital Data</div></div></div>
+        </div>
+      </div>
+      <div class="testi-dots" id="testiDots">
+        <button class="active" data-i="0" aria-label="Testimonial 1"></button>
+        <button data-i="1" aria-label="Testimonial 2"></button>
+        <button data-i="2" aria-label="Testimonial 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="trust-label" style="margin-bottom:30px;">Trusted by data teams like these</div>
+      <div class="trust-track-wrap">
+        <div class="trust-track">
+          <span>Finlytics</span><span>Northbeam</span><span>Orbital Data</span><span>Kestrel Labs</span>
+          <span>Meridian Analytics</span><span>Pathwise</span><span>Cascadia Systems</span><span>Verity Cloud</span>
+          <span>Finlytics</span><span>Northbeam</span><span>Orbital Data</span><span>Kestrel Labs</span>
+          <span>Meridian Analytics</span><span>Pathwise</span><span>Cascadia Systems</span><span>Verity Cloud</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div><a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Agent Forge AI logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" /><span class="logo-mark" style="display:none;"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L12 7L17 17" stroke="#191919" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Agent Forge AI</a><p style="color:var(--ink-soft);font-size:13.5px;max-width:300px;margin-top:14px;">1000 Brickell Avenue, Suite 480<br/>Miami, FL 33131</p></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Product</h4><a href="features.html">Features</a><a href="demo.html">Live Demo</a><a href="pricing.html">Pricing</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="customers.html">Customers</a><a href="blog.html">Blog</a></div>
+        <div class="footer-col"><h4>Account</h4><a href="login.html">Sign in</a><a href="signup.html">Sign up</a><a href="support.html">Support</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span class="js-year">2026</span> CODEGPT LLC</span><div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="cookies.html">Cookie Policy</a></div></div>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner"><p>We use cookies to improve your experience and analyze traffic. See our <a href="cookies.html" style="color:var(--accent);">Cookie Policy</a> for details.</p><div class="cookie-actions"><button class="reject" id="cookieReject">Reject</button><button class="accept" id="cookieAccept">Accept</button></div></div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

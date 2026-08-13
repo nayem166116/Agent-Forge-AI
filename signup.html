@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sign up — Agent Forge AI</title>
+<meta name="color-scheme" content="dark" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23191919'/%3E%3Cpath d='M7 17L12 7L17 17' stroke='%235E9FE8' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<canvas id="aiCanvas" class="ai-bg" aria-hidden="true"></canvas>
+<header class="nav" id="siteNav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Agent Forge AI logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" /><span class="logo-mark" style="display:none;"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L12 7L17 17" stroke="#191919" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Agent Forge AI</a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="demo.html">Live Demo</a>
+      <a href="customers.html">Customers</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="login.html" class="nav-signin">Sign in</a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</header>
+
+<div class="auth-shell">
+  <div class="auth-card">
+    <div id="signupCardBody">
+    <h1>Start your free trial</h1>
+    <p class="auth-sub">14 days full access · no credit card required</p>
+    <form id="signupForm" novalidate>
+      <div class="form-banner"></div>
+      <div class="field">
+        <label for="signupName">Full name</label>
+        <input id="signupName" type="text" required placeholder="Jane Doe" />
+        <div class="err-msg">Name is required.</div>
+      </div>
+      <div class="field">
+        <label for="signupEmail">Work email</label>
+        <input id="signupEmail" type="email" required placeholder="you@company.com" />
+        <div class="err-msg">Enter a valid email address.</div>
+      </div>
+      <div class="field">
+        <label for="signupPassword">Password</label>
+        <input id="signupPassword" type="password" required placeholder="Create a password" />
+        <div class="err-msg">Password is required.</div>
+      </div>
+      <button type="submit" class="btn btn-accent btn-block"><span class="btn-label">Create account</span><span class="spinner"></span></button>
+    </form>
+    <div class="auth-divider">OR</div>
+    <a href="#" class="btn btn-outline btn-block">Continue with Google</a>
+    <div class="auth-foot">Already have an account? <a href="login.html">Sign in</a></div>
+    </div>
+    <div id="verifyPanel" style="display:none;">
+      <h1>Verify your email</h1>
+      <p class="verify-hint">We sent a 6-digit verification code to <strong id="verifyEmailLabel">your email</strong>. Enter it below to activate your account.</p>
+      <form id="verifyForm" novalidate>
+        <div class="field">
+          <label for="verifyCode">Verification code</label>
+          <input id="verifyCode" class="verify-code-input" type="text" inputmode="numeric" maxlength="6" required placeholder="000000" />
+          <div class="err-msg">Enter the 6-digit code from your email.</div>
+        </div>
+        <button type="submit" class="btn btn-accent btn-block"><span class="btn-label">Verify email</span><span class="spinner"></span></button>
+      </form>
+      <div class="auth-foot">Didn't get a code? <button type="button" id="resendCode" class="resend-link">Resend code</button></div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Features — Agent Forge AI</title>
+<meta name="color-scheme" content="dark" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23191919'/%3E%3Cpath d='M7 17L12 7L17 17' stroke='%235E9FE8' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<canvas id="aiCanvas" class="ai-bg" aria-hidden="true"></canvas>
+<header class="nav" id="siteNav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Agent Forge AI logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" /><span class="logo-mark" style="display:none;"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L12 7L17 17" stroke="#191919" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Agent Forge AI</a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="features.html" class="current">Features</a>
+      <a href="demo.html">Live Demo</a>
+      <a href="customers.html">Customers</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="login.html" class="nav-signin">Sign in</a>
+      <a href="signup.html" class="btn btn-primary"><span class="btn-label">Book a Demo</span><span class="spinner"></span></a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</header>
+
+<main>
+  <div class="page-header">
+      <span class="hero-ring r1"></span>
+      <span class="hero-ring r2"></span>
+      <span class="hero-ring r3"></span>
+    <div class="wrap">
+      <span class="hero-eyebrow">Product</span>
+      <h1 class="kinetic-block">
+      <span class="k-line k-xl">One AI-native</span>
+      <span class="k-line k-xl k-accent">layer for data</span>
+      </h1>
+      <p>Six core capabilities that replace ingestion, monitoring, and reporting tools you're duct-taping together today.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="features-grid reveal-stagger">
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
+          <h3>Real-time anomaly detection</h3>
+          <p>Statistical + ML models flag deviations within seconds of ingestion, with confidence scores instead of blind thresholds.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg></div>
+          <h3>Predictive forecasting</h3>
+          <p>Rolling forecasts on every core metric, retrained nightly against your live pipeline — no manual model tuning.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg></div>
+          <h3>Automated reporting</h3>
+          <p>Digest reports land in Slack or email on your schedule, written in plain language, not just charts.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></div>
+          <h3>Root-cause explanations</h3>
+          <p>Every alert ships with a plain-language explanation of contributing factors — not just a spike on a chart.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg></div>
+          <h3>Pipeline health monitoring</h3>
+          <p>Track schema drift, ingestion delay, and data quality across every source feeding your warehouse.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+          <h3>Enterprise-grade security</h3>
+          <p>SOC 2 Type II, column-level access control, and full audit logging on every workspace, by default.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--surface);border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-eyebrow">How it works</div>
+        <h2>From raw event to explained anomaly in three steps</h2>
+      </div>
+      <div class="features-grid reveal-stagger" style="grid-template-columns:repeat(3,1fr);">
+        <div class="feature-card"><div class="feature-icon" style="background:var(--accent-soft);"><span style="color:var(--accent);font-weight:700;font-size:16px;">01</span></div><h3>Connect your pipeline</h3><p>Point Agent Forge AI at your warehouse, event stream, or API in minutes with pre-built connectors.</p></div>
+        <div class="feature-card"><div class="feature-icon" style="background:var(--accent-soft);"><span style="color:var(--accent);font-weight:700;font-size:16px;">02</span></div><h3>Models learn your baseline</h3><p>Within 48 hours, forecasting and anomaly models are calibrated to your specific traffic patterns.</p></div>
+        <div class="feature-card"><div class="feature-icon" style="background:var(--accent-soft);"><span style="color:var(--accent);font-weight:700;font-size:16px;">03</span></div><h3>Get explained alerts</h3><p>When something shifts, you get a plain-language explanation — not just a red dot on a graph.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-eyebrow">Integrations</div>
+        <h2>Plugs into the stack you already run</h2>
+        <p>Native connectors for warehouses, event streams, and alerting tools — most teams are ingesting live data within 15 minutes.</p>
+      </div>
+      <div class="integrations-grid reveal-stagger">
+        <div class="integration-chip"><span class="ic-status"></span><div class="ic-mark">SF</div><div><div class="ic-name">Snowflake</div><div class="ic-type">Warehouse</div></div></div>
+        <div class="integration-chip"><span class="ic-status"></span><div class="ic-mark">BQ</div><div><div class="ic-name">BigQuery</div><div class="ic-type">Warehouse</div></div></div>
+        <div class="integration-chip"><span class="ic-status"></span><div class="ic-mark">RS</div><div><div class="ic-name">Redshift</div><div class="ic-type">Warehouse</div></div></div>
+        <div class="integration-chip"><span class="ic-status"></span><div class="ic-mark">DB</div><div><div class="ic-name">Databricks</div><div class="ic-type">Lakehouse</div></div></div>
+        <div class="integration-chip"><span class="ic-status"></span><div class="ic-mark">PG</div><div><div class="ic-name">PostgreSQL</div><div class="ic-type">Database</div></div></div>
+        <div class="integration-chip"><span class="ic-status"></span><div class="ic-mark">KF</div><div><div class="ic-name">Kafka</div><div class="ic-type">Event stream</div></div></div>
+        <div class="integration-chip"><span class="ic-status"></span><div class="ic-mark">SG</div><div><div class="ic-name">Segment</div><div class="ic-type">CDP</div></div></div>
+        <div class="integration-chip"><span class="ic-status"></span><div class="ic-mark">FT</div><div><div class="ic-name">Fivetran</div><div class="ic-type">Ingestion</div></div></div>
+        <div class="integration-chip"><span class="ic-status"></span><div class="ic-mark">DBT</div><div><div class="ic-name">dbt</div><div class="ic-type">Transform</div></div></div>
+        <div class="integration-chip"><span class="ic-status"></span><div class="ic-mark">S3</div><div><div class="ic-name">Amazon S3</div><div class="ic-type">Storage</div></div></div>
+        <div class="integration-chip"><span class="ic-status"></span><div class="ic-mark">SL</div><div><div class="ic-name">Slack</div><div class="ic-type">Alerting</div></div></div>
+        <div class="integration-chip"><span class="ic-status"></span><div class="ic-mark">PD</div><div><div class="ic-name">PagerDuty</div><div class="ic-type">Alerting</div></div></div>
+      </div>
+      <div style="text-align:center;margin-top:28px;color:var(--ink-faint);font-size:13.5px;">Don't see your tool? Our REST API and webhooks connect to anything.</div>
+    </div>
+  </section>
+
+  <section style="background:var(--surface);border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-eyebrow">Built for every team</div>
+        <h2>The same pipeline, tuned to how you work</h2>
+      </div>
+      <div class="usecase-tabs" id="usecaseTabs">
+        <button class="usecase-tab active" data-panel="uc-eng">Data Engineering</button>
+        <button class="usecase-tab" data-panel="uc-product">Product Analytics</button>
+        <button class="usecase-tab" data-panel="uc-revops">Revenue Ops</button>
+        <button class="usecase-tab" data-panel="uc-sre">Platform &amp; SRE</button>
+      </div>
+      <div class="usecase-panel active" id="uc-eng">
+        <div class="usecase-copy">
+          <h3>Catch pipeline breakage before your CEO does</h3>
+          <p>Agent Forge AI watches ingestion jobs and schema contracts across every source so silent failures don't reach the warehouse.</p>
+          <ul class="usecase-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Schema drift detection across every ingested table</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Freshness &amp; volume anomaly alerts before dashboards break</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Lineage-aware root cause across upstream dependencies</li>
+          </ul>
+        </div>
+        <div class="usecase-visual">
+          <div class="uv-label">Pipeline health</div>
+          <div class="uv-row"><span>events_raw → events_clean</span><span class="uv-tag">Healthy</span></div>
+          <div class="uv-row"><span>orders_stream ingestion</span><span class="uv-tag">Healthy</span></div>
+          <div class="uv-row"><span>users_dim schema check</span><span class="uv-tag">Healthy</span></div>
+          <div class="uv-row"><span>Last full scan</span><span>38 seconds ago</span></div>
+        </div>
+      </div>
+      <div class="usecase-panel" id="uc-product">
+        <div class="usecase-copy">
+          <h3>Know why activation dropped, same day</h3>
+          <p>Funnel and cohort metrics are monitored continuously, with root-cause breakdowns by platform, geography, and release version.</p>
+          <ul class="usecase-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Automatic segment breakdowns on every metric drop</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Release-correlated anomaly tagging</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Weekly plain-language product health digest</li>
+          </ul>
+        </div>
+        <div class="usecase-visual">
+          <div class="uv-label">Activation funnel</div>
+          <div class="uv-row"><span>Signup → Activated</span><span class="uv-tag">+4.2%</span></div>
+          <div class="uv-row"><span>iOS activation rate</span><span class="uv-tag">Healthy</span></div>
+          <div class="uv-row"><span>Android activation rate</span><span class="uv-tag">Healthy</span></div>
+          <div class="uv-row"><span>Root cause confidence</span><span>96%</span></div>
+        </div>
+      </div>
+      <div class="usecase-panel" id="uc-revops">
+        <div class="usecase-copy">
+          <h3>Forecast pipeline and revenue without a spreadsheet</h3>
+          <p>Rolling forecasts on bookings, churn, and pipeline coverage, retrained nightly against your live CRM and billing data.</p>
+          <ul class="usecase-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>14-day and 90-day revenue forecasts, auto-updated nightly</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Churn-risk scoring surfaced before renewal windows</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Automated board-ready reporting, no manual exports</li>
+          </ul>
+        </div>
+        <div class="usecase-visual">
+          <div class="uv-label">Revenue forecast</div>
+          <div class="uv-row"><span>Q3 bookings forecast</span><span class="uv-tag">On track</span></div>
+          <div class="uv-row"><span>At-risk accounts flagged</span><span>12</span></div>
+          <div class="uv-row"><span>Forecast accuracy (90d)</span><span class="uv-tag">94.1%</span></div>
+          <div class="uv-row"><span>Next model retrain</span><span>Tonight, 02:00 UTC</span></div>
+        </div>
+      </div>
+      <div class="usecase-panel" id="uc-sre">
+        <div class="usecase-copy">
+          <h3>Reduce alert fatigue with confidence-scored anomalies</h3>
+          <p>Latency, error rate, and throughput anomalies are correlated across services, so on-call gets one explained incident instead of twenty noisy pages.</p>
+          <ul class="usecase-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Cross-service correlation collapses duplicate alerts</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>PagerDuty &amp; Slack routing with confidence thresholds</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Post-incident timeline auto-generated for retros</li>
+          </ul>
+        </div>
+        <div class="usecase-visual">
+          <div class="uv-label">Incident correlation</div>
+          <div class="uv-row"><span>Checkout API p99 latency</span><span class="uv-tag">Resolved</span></div>
+          <div class="uv-row"><span>Alerts collapsed into 1 incident</span><span>19</span></div>
+          <div class="uv-row"><span>Time to root cause</span><span class="uv-tag">4m 12s</span></div>
+          <div class="uv-row"><span>On-call pages sent</span><span>1 (was 19)</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-eyebrow">Under the hood</div>
+        <h2>Technical specs, not marketing rounding</h2>
+      </div>
+      <div class="spec-grid reveal-stagger">
+        <div class="spec-item"><div class="sp-label">Ingestion latency</div><div class="sp-value">&lt; 2 seconds</div><div class="sp-desc">Event-to-availability time for streaming sources under normal load.</div></div>
+        <div class="spec-item"><div class="sp-label">Model retraining</div><div class="sp-value">Nightly, per workspace</div><div class="sp-desc">Forecasting and anomaly baselines recalibrate against your latest data automatically.</div></div>
+        <div class="spec-item"><div class="sp-label">API &amp; webhooks</div><div class="sp-value">REST + GraphQL</div><div class="sp-desc">Full read/write API plus outbound webhooks for every alert and report.</div></div>
+        <div class="spec-item"><div class="sp-label">SDKs</div><div class="sp-value">Python, Node, Go</div><div class="sp-desc">First-party client libraries for custom ingestion and query workflows.</div></div>
+        <div class="spec-item"><div class="sp-label">Data residency</div><div class="sp-value">US, EU, APAC</div><div class="sp-desc">Choose the region your data is processed and stored in at workspace creation.</div></div>
+        <div class="spec-item"><div class="sp-label">Encryption</div><div class="sp-value">AES-256 / TLS 1.3</div><div class="sp-desc">At rest and in transit, with customer-managed key support on Enterprise.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--surface);border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-eyebrow">Why not just use a dashboard?</div>
+        <h2>How Agent Forge AI compares</h2>
+      </div>
+      <div style="overflow-x:auto;" class="reveal">
+        <table class="compare-table">
+          <thead><tr><th>Capability</th><th>Legacy BI dashboards</th><th>Generic alerting tools</th><th>Agent Forge AI</th></tr></thead>
+          <tbody>
+            <tr><td>Anomaly detection</td><td class="cmp-no">Manual thresholds</td><td class="cmp-yes">Yes</td><td class="cmp-yes">Yes, ML-scored</td></tr>
+            <tr><td>Root-cause explanation</td><td class="cmp-no">—</td><td class="cmp-no">—</td><td class="cmp-yes">Plain-language, automatic</td></tr>
+            <tr><td>Forecasting</td><td class="cmp-no">—</td><td class="cmp-no">—</td><td class="cmp-yes">Nightly, per metric</td></tr>
+            <tr><td>Setup time</td><td class="cmp-no">Weeks</td><td class="cmp-no">Days</td><td class="cmp-yes">Minutes</td></tr>
+            <tr><td>Ongoing maintenance</td><td class="cmp-no">Dashboard sprawl</td><td class="cmp-no">Alert fatigue</td><td class="cmp-yes">Self-calibrating</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-band reveal" style="padding:64px 40px;">
+        <h2>See these features on your own data</h2>
+        <p>Run a live analysis pass on our demo pipeline right now — no signup required.</p>
+        <div class="hero-actions">
+          <a href="demo.html" class="btn btn-accent"><span class="btn-label">Try the live demo</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Agent Forge AI logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" /><span class="logo-mark" style="display:none;"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L12 7L17 17" stroke="#191919" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Agent Forge AI</a>
+        <p style="color:var(--ink-soft);font-size:13.5px;max-width:300px;margin-top:14px;">1000 Brickell Avenue, Suite 480<br/>Miami, FL 33131</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Product</h4><a href="features.html">Features</a><a href="demo.html">Live Demo</a><a href="pricing.html">Pricing</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="customers.html">Customers</a><a href="blog.html">Blog</a></div>
+        <div class="footer-col"><h4>Account</h4><a href="login.html">Sign in</a><a href="signup.html">Sign up</a><a href="support.html">Support</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year">2026</span> CODEGPT LLC</span>
+      <div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="cookies.html">Cookie Policy</a></div>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner">
+  <p>We use cookies to improve your experience and analyze traffic. See our <a href="cookies.html" style="color:var(--accent);">Cookie Policy</a> for details.</p>
+  <div class="cookie-actions"><button class="reject" id="cookieReject">Reject</button><button class="accept" id="cookieAccept">Accept</button></div>
+</div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
